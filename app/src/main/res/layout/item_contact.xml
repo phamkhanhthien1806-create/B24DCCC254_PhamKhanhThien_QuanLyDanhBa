@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_contact_card"
+    android:elevation="1dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="16dp"
+    android:paddingTop="14dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="14dp">
+
+    <!-- Avatar with Initials: Pastel circles -->
+    <TextView
+        android:id="@+id/tvAvatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="@drawable/bg_avatar_circle"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="A" />
+
+    <!-- Contact Info -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <!-- Name: Slate 900 (#0F172A) -->
+        <TextView
+            android:id="@+id/tvContactName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:text="Nguyễn Văn An" />
+
+        <!-- Phone: Slate 500 (#64748B) -->
+        <TextView
+            android:id="@+id/tvContactPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            tools:text="0901 234 567" />
+
+        <!-- Group Badge: Slate 100 background (#F1F5F9), text (#334155) -->
+        <TextView
+            android:id="@+id/tvContactGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_badge_group"
+            android:textColor="@color/tag_text"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text="Bạn bè" />
+    </LinearLayout>
+
+    <!-- Star Favorite Indicator: Amber Gold (#D97706) -->
+    <ImageView
+        android:id="@+id/imgFavoriteStar"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="4dp"
+        android:contentDescription="@string/favorite_label"
+        android:src="@drawable/ic_star_filled"
+        tools:visibility="visible" />
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Màu chủ đạo (TopBar, Nút chính) -->
+    <color name="primary">#1E3A8A</color>              <!-- Xanh Navy lịch lãm -->
+    <color name="primary_dark">#172554</color>         <!-- Cho thanh StatusBar trên cùng -->
+
+    <!-- Nền màn hình và Card -->
+    <color name="bg_screen">#F8FAFC</color>            <!-- Nền app dịu mắt thay vì trắng tinh -->
+    <color name="card_surface">#FFFFFF</color>         <!-- Nền trắng cho Card danh bạ, ô nhập -->
+    <color name="border_stroke">#E2E8F0</color>        <!-- Đường viền mỏng trang nhã -->
+    <color name="input_border">#CBD5E1</color>         <!-- Viền ô nhập liệu -->
+    <color name="divider_line">#E2E8F0</color>         <!-- Đường kẻ phân cách -->
+
+    <!-- Màu chữ (Typography) -->
+    <color name="text_primary">#0F172A</color>         <!-- Họ tên, Tiêu đề (Đen than đậm) -->
+    <color name="text_secondary">#64748B</color>       <!-- Số điện thoại, Nhãn phụ (Xám khói) -->
+    <color name="text_hint">#94A3B8</color>            <!-- Chữ gợi ý mờ trong EditText -->
+    <color name="text_stat_sub">#CBD5E1</color>        <!-- Chữ phụ trong khối thống kê -->
+
+    <!-- Màu chức năng đặc biệt của các màn hình -->
+    <color name="color_star">#D97706</color>           <!-- Sao Yêu thích (Vàng hổ phách) -->
+    <color name="btn_call">#059669</color>             <!-- Nút Gọi điện (Xanh lá Emerald) -->
+    <color name="btn_delete">#DC2626</color>           <!-- Nút Xóa liên hệ (Đỏ Ruby cảnh báo) -->
+    <color name="tag_bg">#F1F5F9</color>               <!-- Nền tag Bạn bè, Gia đình -->
+    <color name="tag_text">#334155</color>             <!-- Chữ tag Bạn bè, Gia đình -->
+
+    <!-- Màu cơ bản -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Avatar palette (Pastel sang trọng) -->
+    <color name="avatar_an">#0D9488</color>            <!-- An: Teal sang -->
+    <color name="avatar_binh">#EA580C</color>          <!-- Bình: Orange sang -->
+    <color name="avatar_chau">#4F46E5</color>          <!-- Châu: Indigo sang -->
+    <color name="avatar_other1">#2563EB</color>        <!-- Blue -->
+    <color name="avatar_other2">#DB2777</color>        <!-- Pink -->
+    <color name="avatar_other3">#16A34A</color>        <!-- Green -->
+</resources>

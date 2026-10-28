@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_screen"
+    android:orientation="vertical">
+
+    <!-- Top App Bar: Classic Sapphire Navy (#1E3A8A) -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="@color/primary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="12dp"
+        android:paddingEnd="16dp">
+
+        <ImageButton
+            android:id="@+id/btnBackTop"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/btn_back"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/detail_title"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="18dp"
+            android:paddingTop="18dp"
+            android:paddingEnd="18dp"
+            android:paddingBottom="28dp">
+
+            <!-- Detail Info Card: Surface white with subtle border -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_contact_card"
+                android:elevation="2dp"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="18dp">
+
+                <!-- Header inside Card: Avatar + Name + Phone -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <!-- Avatar Circle -->
+                    <TextView
+                        android:id="@+id/tvAvatarDetail"
+                        android:layout_width="64dp"
+                        android:layout_height="64dp"
+                        android:background="@drawable/bg_avatar_circle"
+                        android:gravity="center"
+                        android:textColor="@color/white"
+                        android:textSize="28sp"
+                        android:textStyle="bold"
+                        tools:text="B" />
+
+                    <!-- Name and Phone -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <!-- Name: Slate 900 (#0F172A) -->
+                        <TextView
+                            android:id="@+id/tvNameDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/text_primary"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:text="Trần Thị Bình" />
+
+                        <!-- Phone: Sapphire Navy (#1E3A8A) -->
+                        <TextView
+                            android:id="@+id/tvPhoneDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:textColor="@color/primary"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:text="0912 345 678" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Divider 1 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginBottom="14dp"
+                    android:background="@color/divider_line" />
+
+                <!-- Group and Gender Row (2 columns) -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!-- Group Column -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/group_label"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvGroupDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:text="Gia đình" />
+                    </LinearLayout>
+
+                    <!-- Gender Column -->
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/gender_label"
+                            android:textColor="@color/text_secondary"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/tvGenderDetail"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:textColor="@color/text_primary"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:text="Nữ" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- Notes Section -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/notes_label"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tvNotesDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp"
+                    tools:text="Chị gái, hay gọi buổi tối" />
+
+                <!-- Divider 2 -->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@color/divider_line" />
+
+                <!-- Favorite CheckBox inside Card -->
+                <CheckBox
+                    android:id="@+id/cbFavoriteDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/primary"
+                    android:text="@string/favorite_label"
+                    android:textColor="@color/text_primary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- Action Buttons Section -->
+
+            <!-- 1. Call Button: Emerald Green (#059669) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnCall"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/btn_call"
+                android:elevation="2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_call"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 2. Back Button: Outlined Navy (#1E3A8A) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnBackBottom"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_outline"
+                android:elevation="1dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_back"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- 3. Delete Contact Button: Ruby Red (#DC2626) -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnDelete"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/btn_danger"
+                android:elevation="2dp"
+                android:stateListAnimator="@null"
+                android:text="@string/btn_delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
